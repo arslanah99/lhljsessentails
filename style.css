@@ -9,5 +9,69 @@ main {
     background-color: #f0f0f0;
     margin: 20px auto;
     max-width: 450px;
-    padding: 20px
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 7px 5px -2px rgba(219,219,219,1);
+}
+
+#odd{
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#even{
+    padding:10px;
+}
+
+#initials{
+
+    width: 7%;
+    box-sizing: border-box;
+    border: 2px solid rgba(63, 127, 191, 0.37);
+    border-radius: 4px;
+    height: 5%;
+}
+
+#formBody{
+    background-color: #82b1ff;
+    padding-left: 9px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+#message{
+    width: 75%;
+    box-sizing: border-box;
+    border: 2px solid rgba(63, 127, 191, 0.37);
+    border-radius: 4px;
+    height: 5%;
+}
+
+button{
+    width: 14%;
+    height: 5%;
+    box-sizing: border-box;
+    border: 2px solid #82b1ff;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #4286f4;
+    font-style: bold;
+    color: white;
+    font-style: oblique;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+#history{
+    padding-left:0px;
+}
+
+#formBody{
+    border-radius: 5px;
+    background-color:rgba(63, 127, 191, 0.37)
 }

@@ -1,18 +1,18 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
-var io = require('socket.io')(server);
-var http = require('http');
-var server = http.Server(app);
-var path = require('path')
+const http = require('http');
+const server = http.createServer(app);
+const path = require('path')
+const io = require('socket.io')(server);
+
+app.use(express.static(path.join(__dirname, '../client')))
 
 io.on('connection', function (socket) {
   socket.on('message', function (msg) {
     io.emit('message', msg)
   });
 });
-
-app.use(express.static(path.join(__dirname, '../client')))
 
 server.listen(8000, function() {
   console.log('Chat server running');
